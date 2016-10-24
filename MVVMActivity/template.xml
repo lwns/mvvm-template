@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<template
+    format="1"
+    revision="1"
+    name="MVVM Activity"
+    minApi="7"
+    minBuildApi="14"
+    description="Creates a new MVVM activity">
+
+    <category value="MVVM" />
+    <formfactor value="Mobile" />
+
+    <parameter
+        id="activityClass"
+        name="Activity Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="Main"
+        help="The name of the activity class to create" />
+
+    <parameter
+        id="isLauncher"
+        name="Launcher Activity"
+        type="boolean"
+        default="false"
+        help="If true, this activity will have a CATEGORY_LAUNCHER intent filter, making it visible in the launcher" />
+
+    <parameter
+        id="packageName"
+        name="class package name"
+        type="string"
+        constraints="package"
+        default="com.core.op"
+        help="class package name" />   
+
+    <parameter
+        id="appPackageName"
+        name="app Package name"
+        type="string"
+        default="com.core.op"
+        help="app package name" />
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>  
