@@ -10,7 +10,7 @@ import com.trello.rxlifecycle.components.support.RxFragment;
 import javax.inject.Inject;
 
 @PerActivity
-public class ${activityClass}ViewModel implements BViewModel{
+public class ${activityClass}ViewModel extends BFViewModel<Frg${activityClass}Binding>{
 	
 	private final RxAppCompatActivity activity;
 
@@ -25,5 +25,10 @@ public class ${activityClass}ViewModel implements BViewModel{
 
     public void setFragment(RxFragment fragment){
         this.fragment = fragment;
+    }
+
+    @Override
+    public void afterViews() {
+
     }
 }

@@ -10,12 +10,17 @@ import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
 import javax.inject.Inject;
 
 @PerActivity
-public class ${activityClass}ViewModel implements BViewModel{
+public class ${activityClass}ViewModel extends BAViewModel<Act${activityClass}Binding>{
 	
 	private final RxAppCompatActivity activity;
 
     @Inject
     public ${activityClass}ViewModel(RxAppCompatActivity activity) {
         this.activity = activity;
+    }
+
+    @Override
+    public void afterViews() {
+
     }
 }

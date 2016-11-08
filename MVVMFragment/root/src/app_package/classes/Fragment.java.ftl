@@ -11,19 +11,18 @@ import ${appPackageName}.lib.utils.inject.RootView;
 import javax.inject.Inject;
 
 @RootView(R.layout.frg_${activityClass?lower_case})
-public final class ${activityClass}Fragment extends BaseFragment<Frg${activityClass}Binding>{
+public final class ${activityClass}Fragment extends BaseFragment<${activityClass}ViewModel,Frg${activityClass}Binding>{
 
-    @Inject
-    ${activityClass}ViewModel viewModel;
+    public static ${activityClass}Fragment instance() {
+        return new ${activityClass}Fragment();
+    }
 
     @BeforeViews
     void beforViews() {
         getComponent(${attachtoactivityClass}Component.class).inject(this);
-        viewModel.setFragment(this);
     }
 
     @AfterViews
     void afterViews() {
-        binding.setViewModel(viewModel);
     }
 }

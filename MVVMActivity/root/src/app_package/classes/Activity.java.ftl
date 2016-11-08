@@ -14,11 +14,12 @@ import ${appPackageName}.lib.utils.inject.RootView;
 import javax.inject.Inject;
 
 @RootView(R.layout.act_${activityClass?lower_case})
-public final class ${activityClass}Activity extends BaseActivity<Act${activityClass}Binding>{
+public final class ${activityClass}Activity extends BaseActivity<${activityClass}ViewModel,Act${activityClass}Binding>{
 
-    @Inject
-    ${activityClass}ViewModel viewModel;
-
+    public final static void instance(Context context) {
+        context.startActivity(new Intent(context, ${activityClass}Activity.class));
+    }
+    
     ${activityClass}Component component;
 
     @BeforeViews
@@ -33,6 +34,5 @@ public final class ${activityClass}Activity extends BaseActivity<Act${activityCl
 
     @AfterViews
     void afterViews() {
-        binding.setViewModel(viewModel);
     }
 }
