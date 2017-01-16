@@ -2,8 +2,7 @@ package ${packageName};
 
 
 
-import android.support.v4.app.FragmentManager;
-import ${appPackageName}.lib.base.BViewModel;
+import ${appPackageName}.lib.base.BAViewModel;
 import ${appPackageName}.lib.di.PerActivity;
 import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
 
@@ -16,7 +15,7 @@ public class ${activityClass}ViewModel extends BAViewModel<Act${activityClass}Bi
 
     @Inject
     public ${activityClass}ViewModel(RxAppCompatActivity activity) {
-        this.activity = activity;
+        super(activity);
     }
 
     @Override
