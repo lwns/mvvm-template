@@ -30,14 +30,14 @@
         name="class package name"
         type="string"
         constraints="package"
-        default="com.core.op"
+        default="com.slash.youth"
         help="class package name" />   
 
     <parameter
         id="appPackageName"
         name="app Package name"
         type="string"
-        default="com.core.op"
+        default="com.slash.youth"
         help="app package name" />
 
     <globals file="globals.xml.ftl" />

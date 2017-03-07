@@ -6,7 +6,7 @@ import dagger.Component;
 import ${appPackageName}.di.modules.ActivityModule;
 import ${appPackageName}.di.modules.${activityClass}Module;
 import ${packageName}.${activityClass}Activity;
-import ${appPackageName}.lib.di.PerActivity;
+import com.core.op.lib.di.PerActivity;
 
 import dagger.Component;
 

@@ -7,9 +7,9 @@ import ${appPackageName}.di.components.Dagger${activityClass}Component;
 import ${appPackageName}.di.components.${activityClass}Component;
 import ${appPackageName}.di.modules.${activityClass}Module;
 
-import ${appPackageName}.lib.utils.inject.AfterViews;
-import ${appPackageName}.lib.utils.inject.BeforeViews;
-import ${appPackageName}.lib.utils.inject.RootView;
+import com.core.op.lib.utils.inject.AfterViews;
+import com.core.op.lib.utils.inject.BeforeViews;
+import com.core.op.lib.utils.inject.RootView;
 
 import javax.inject.Inject;
 

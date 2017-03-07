@@ -2,8 +2,8 @@ package ${packageName};
 
 
 import android.support.v4.app.FragmentManager;
-import ${appPackageName}.lib.base.BFViewModel;
-import ${appPackageName}.lib.di.PerActivity;
+import com.core.op.lib.base.BFViewModel;
+import com.core.op.lib.di.PerActivity;
 import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
 import com.trello.rxlifecycle.components.support.RxFragment;
 

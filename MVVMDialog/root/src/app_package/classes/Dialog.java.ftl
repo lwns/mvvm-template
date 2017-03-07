@@ -2,8 +2,8 @@ package ${packageName};
 
 import ${appPackageName}.R;
 import ${appPackageName}.databinding.Dlg${activityClass}Binding;
-import ${appPackageName}.lib.utils.inject.AfterViews;
-import ${appPackageName}.lib.utils.inject.RootView;
+import com.core.op.lib.utils.inject.AfterViews;
+import com.core.op.lib.utils.inject.RootView;
 import ${appPackageName}.base.BaseDialog;
 
 import javax.inject.Inject;
@@ -13,7 +13,7 @@ public final class ${activityClass}Dialog extends BaseDialog<${activityClass}Vie
 
     @Inject
     public ${activityClass}Dialog(Context context, ${activityClass}ViewModel viewModel) {
-        super(context, viewModel);
+        super(BDialog.newDialog(activity), viewModel);
     }
 
     @AfterViews
