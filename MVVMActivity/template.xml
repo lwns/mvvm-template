@@ -37,6 +37,13 @@
         id="appPackageName"
         name="app Package name"
         type="string"
+        default="com.slash.youth.v2"
+        help="app package name" />
+
+    <parameter
+        id="application"
+        name="app Package name"
+        type="string"
         default="com.slash.youth"
         help="app package name" />
 

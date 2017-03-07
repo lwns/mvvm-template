@@ -1,8 +1,8 @@
 package ${packageName};
 
-import ${appPackageName}.R;
+import ${application}.R;
 import ${appPackageName}.base.BaseActivity;
-import ${appPackageName}.databinding.Act${activityClass}Binding;
+import ${application}.databinding.Act${activityClass}Binding;
 import ${appPackageName}.di.components.Dagger${activityClass}Component;
 import ${appPackageName}.di.components.${activityClass}Component;
 import ${appPackageName}.di.modules.${activityClass}Module;
