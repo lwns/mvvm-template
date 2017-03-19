@@ -2,7 +2,7 @@ package ${packageName};
 
 
 
-import ${appPackageName}.lib.base.BAViewModel;
+import com.core.op.lib.base.BAViewModel;
 import com.core.op.lib.di.PerActivity;
 import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
 

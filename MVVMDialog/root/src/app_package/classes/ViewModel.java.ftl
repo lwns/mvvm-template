@@ -1,17 +1,17 @@
 package ${packageName};
 
 
-import ${appPackageName}.lib.base.BViewModel;
+import com.core.op.lib.base.BDViewModel;
+import ${application}.databinding.Dlg${activityClass}Binding;
 
 import javax.inject.Inject;
 
-public class ${activityClass}ViewModel extends BViewModel<Dlg${activityClass}Binding>{
+@PerActivity
+public class ${activityClass}ViewModel extends BDViewModel<Dlg${activityClass}Binding>{
 	
-	private final RxAppCompatActivity activity;
-
     @Inject
     public ${activityClass}ViewModel(RxAppCompatActivity activity) {
-        this.activity = activity;
+        super(activity);
     }
 
 }

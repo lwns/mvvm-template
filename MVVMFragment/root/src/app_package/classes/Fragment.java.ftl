@@ -1,8 +1,8 @@
 package ${packageName};
 
-import ${appPackageName}.R;
+import ${application}.R;
 import ${appPackageName}.base.BaseFragment;
-import ${appPackageName}.databinding.Frg${activityClass}Binding;
+import ${application}.databinding.Frg${activityClass}Binding;
 import ${appPackageName}.di.components.${attachtoactivityClass}Component;
 import com.core.op.lib.utils.inject.AfterViews;
 import com.core.op.lib.utils.inject.BeforeViews;
