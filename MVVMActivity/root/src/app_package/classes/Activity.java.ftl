@@ -15,11 +15,20 @@ import javax.inject.Inject;
 
 @RootView(R.layout.act_${activityClass?lower_case})
 public final class ${activityClass}Activity extends BaseActivity<${activityClass}ViewModel,Act${activityClass}Binding>{
-
-    public final static void instance(Context context) {
-        context.startActivity(new Intent(context, ${activityClass}Activity.class));
-    }
     
+    public final static void instance(Context context) {
+        instance(context, null);
+    }
+
+
+    public final static void instance(Context context, Bundle bundle) {
+        Intent intent = new Intent(context, ${activityClass}Activity.class));
+        if (bundle != null) {
+            intent.putExtra("data", bundle);
+        }
+        context.startActivity(intent);
+    }
+
     ${activityClass}Component component;
 
     @BeforeViews
