@@ -22,7 +22,7 @@ public final class ${activityClass}Activity extends BaseActivity<${activityClass
 
 
     public final static void instance(Context context, Bundle bundle) {
-        Intent intent = new Intent(context, ${activityClass}Activity.class));
+        Intent intent = new Intent(context, ${activityClass}Activity.class);
         if (bundle != null) {
             intent.putExtra("data", bundle);
         }
