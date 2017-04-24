@@ -30,21 +30,21 @@
         name="class package name"
         type="string"
         constraints="package"
-        default="com.slash.youth"
+        default="com.slashYouth.thatWhat"
         help="class package name" />   
 
     <parameter
         id="appPackageName"
         name="app Package name"
         type="string"
-        default="com.slash.youth.v2"
+        default="com.slashYouth.thatWhat"
         help="app package name" />
 
     <parameter
         id="application"
         name="app Package name"
         type="string"
-        default="com.slash.youth"
+        default="com.slashYouth.thatWhat"
         help="app package name" />
 
     <globals file="globals.xml.ftl" />
