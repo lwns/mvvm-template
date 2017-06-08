@@ -4,7 +4,7 @@ import ${application}.R;
 import ${application}.databinding.Dlg${activityClass}Binding;
 import com.core.op.lib.utils.inject.AfterViews;
 import com.core.op.lib.utils.inject.RootView;
-import ${appPackageName}.base.BaseDialog;
+import com.core.op.base.BaseDialog;
 
 import javax.inject.Inject;
 

@@ -1,7 +1,7 @@
 package ${packageName};
 
 import ${application}.R;
-import ${appPackageName}.base.BaseActivity;
+import com.core.op.base.BaseActivity;
 import ${application}.databinding.Act${activityClass}Binding;
 import ${appPackageName}.di.components.Dagger${activityClass}Component;
 import ${appPackageName}.di.components.${activityClass}Component;
