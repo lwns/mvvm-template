@@ -23,14 +23,14 @@
         name="Class Package name"
         type="string"
         constraints="package"
-        default="com.niohouse.conf.feature"
+        default="com.niohouse.pay.feature"
         help="class package name" />   
 
     <parameter
         id="appPackageName"
         name="App Package name"
         type="string"
-        default="com.niohouse.conf"
+        default="com.niohouse.pay"
         help="app package name" />   
 
         
@@ -38,7 +38,7 @@
         id="application"
         name="app Package name"
         type="string"
-        default="com.niohouse.conf"
+        default="com.niohouse.pay"
         help="app package name" />
 
     <globals file="globals.xml.ftl" />

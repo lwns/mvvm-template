@@ -2,7 +2,7 @@ package ${packageName};
 
 
 import com.core.op.lib.base.BDViewModel;
-import ${application}.databinding.Dlg${activityClass}Binding;
+import ${appPackageName}.databinding.Dlg${activityClass}Binding;
 
 import javax.inject.Inject;
 

@@ -1,8 +1,9 @@
 package ${packageName};
 
-import ${application}.R;
-import com.core.op.base.BaseActivity;
-import ${application}.databinding.Act${activityClass}Binding;
+import ${appPackageName}.R;
+import ${appPackageName}.BR;
+import com.core.op.lib.base.BActivity;
+import ${appPackageName}.databinding.Act${activityClass}Binding;
 import ${appPackageName}.di.components.Dagger${activityClass}Component;
 import ${appPackageName}.di.components.${activityClass}Component;
 import ${appPackageName}.di.modules.${activityClass}Module;
@@ -11,10 +12,8 @@ import com.core.op.lib.utils.inject.AfterViews;
 import com.core.op.lib.utils.inject.BeforeViews;
 import com.core.op.lib.utils.inject.RootView;
 
-import javax.inject.Inject;
 
-@RootView(R.layout.act_${activityClass?lower_case})
-public final class ${activityClass}Activity extends BaseActivity<${activityClass}ViewModel,Act${activityClass}Binding>{
+public final class ${activityClass}Activity extends BActivity<${activityClass}ViewModel,Act${activityClass}Binding>{
     
     public final static void instance(Context context) {
         instance(context, null);
@@ -31,11 +30,16 @@ public final class ${activityClass}Activity extends BaseActivity<${activityClass
 
     ${activityClass}Component component;
 
+    @Override
+    public ItemView rootView() {
+        return ItemView.of(BR.viewModel, R.layout.act_${activityClass?lower_case});
+    }
+
     @BeforeViews
     void beforViews() {
         component = Dagger${activityClass}Component.builder()
-                .appComponent(getApplicationComponent())
-                .activityModule(getActivityModule())
+                .appComponent(((MainApplication) getApplication()).getAppComponent())
+                .activityModule(new ActivityModule(this))
                 .${activityClass?lower_case}Module(new ${activityClass}Module())
                 .build();
         component.inject(this);

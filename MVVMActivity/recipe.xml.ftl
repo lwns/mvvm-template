@@ -8,10 +8,10 @@
       to="${escapeXmlAttribute(srcOut)}/${activityClass}Activity.java" />
 
     <instantiate from="src/app_package/classes/Component.java.ftl"
-      to="${escapeXmlAttribute(manifestOut)}/java/${slashedPackageName(appPackageName)}/di/components/${activityClass}Component.java" />
+      to="${escapeXmlAttribute(manifestOut)}/java/${slashedPackageName(packageName)}/di/components/${activityClass}Component.java" />
 
     <instantiate from="src/app_package/classes/Module.java.ftl"
-      to="${escapeXmlAttribute(manifestOut)}/java/${slashedPackageName(appPackageName)}/di/modules/${activityClass}Module.java" />
+      to="${escapeXmlAttribute(manifestOut)}/java/${slashedPackageName(packageName)}/di/modules/${activityClass}Module.java" />
 
     <instantiate from="src/app_package/classes/ViewModel.java.ftl"
       to="${escapeXmlAttribute(srcOut)}/${activityClass}ViewModel.java" />

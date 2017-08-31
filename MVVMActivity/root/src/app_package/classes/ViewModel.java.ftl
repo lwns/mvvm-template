@@ -4,6 +4,7 @@ package ${packageName};
 
 import com.core.op.lib.base.BAViewModel;
 import com.core.op.lib.di.PerActivity;
+import ${appPackageName}.databinding.Act${activityClass}Binding;
 import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
 
 import javax.inject.Inject;
